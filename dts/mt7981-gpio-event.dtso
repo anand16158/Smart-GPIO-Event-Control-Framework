@@ -1,0 +1,13 @@
+/dts-v1/;
+/plugin/;
+
+&{/} {
+	gpio_event: gpio-event {
+		compatible = "innovate,gpio-event";
+
+		out-gpios = <&pio 460 GPIO_ACTIVE_HIGH>;
+		in-gpios  = <&pio 461 GPIO_ACTIVE_HIGH>;
+
+		status = "okay";
+	};
+};
